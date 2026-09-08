@@ -5,10 +5,12 @@ on:
     branches:
       - main
       - master
+      - develop
   pull_request:
     branches:
       - main
       - master
+      - develop
 
 jobs:
   test:
@@ -26,8 +28,9 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pandas pytest
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
 
-      - name: Run transformation tests
+      - name: Run transformation & pipeline unit tests
         run: |
-          python -m pytest tests/tests_tranformations.py -v
+          python -m pytest tests/ -v

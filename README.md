@@ -52,14 +52,99 @@ flowchart TD
 
 ---
 
-## ✨ Key Features
+## 🔄 CI/CD and Version Control
 
-- **Batch & Real-Time Ingestion**: Supports historical event replay and real-time event streaming via Apache Kafka.
-- **Robust Data Cleaning & Transformation**: Missing value imputation, record deduplication, and schema enforcement.
-- **Atomic & Idempotent Warehouse Loading**: Guarantees data consistency, preventing partial writes or duplicate records upon retries.
-- **Workflow Orchestration**: Scheduled Airflow DAGs orchestrate automated batch ETL runs.
-- **Interactive Analytics Dashboard**: Streamlit dashboard presenting Average Daily Rate (ADR), cancellation rates, lead time distributions, and guest demographics.
-- **Automated CI/CD**: GitHub Actions pipeline automatically triggers Pytest unit tests on every push and pull request.
+### 1. Git Branching Strategy
+This project follows a structured Git branching strategy tailored for data engineering teams:
+- **`main`**: Production-ready, stable codebase. Direct commits to `main` are restricted.
+- **`develop`**: Integration branch for combining tested features prior to release.
+- **`feature/*`**: Feature branches for developing specific pipeline capabilities (e.g., `feature/cicd-testing`).
+- **`fix/*`**: Dedicated branches for hotfixes and bug resolutions.
+
+```text
+  feature/cicd-testing  ───► [PR / CI Verification] ───┐
+                                                       ▼
+  develop  ───────────────────────────────────────► [Integration] ───► main (Production)
+```
+
+---
+
+### 2. Pipeline as Code
+All pipeline configurations, file path references, topic names, and infrastructure schemas are managed programmatically:
+- **Configuration Module (`config/config.py`)**: Centralized management of dataset schemas (`REQUIRED_COLUMNS`), staging paths (`STAGING_FILE`), warehouse paths (`FINAL_DATA`), and Kafka broker parameters (`KAFKA_BROKER`).
+- **Environment Independence**: Environment variables (`.env`) enable seamless execution across local development, testing, and cloud runtime environments without code modifications.
+
+---
+
+### 3. Unit Testing & Mock Testing
+Automated unit testing validates the transformation logic, schema enforcement, and business rules without relying on live external infrastructure:
+- **Transformation Unit Tests (`tests/tests_tranformations.py`)**: Validates missing value imputation, duplicate removal, schema validation, and edge case handling (empty DataFrames, boundary values).
+- **Mock Testing (`tests/test_pipeline.py`)**: Utilizes `unittest.mock` (`@patch`) to simulate file system operations (`to_csv`, `read_csv`, `os.makedirs`) and Flask API endpoints (`/health`, `/bookings`). This ensures tests remain **deterministic, fast, and runnable locally** without creating physical file artifacts or network dependency locks.
+
+---
+
+### 4. GitHub Actions CI/CD Workflow
+The continuous integration pipeline (`.github/workflows/ci.yml`) automates verification on every code contribution:
+- **Triggers**: Automated runs on every `push` and `pull_request` targeting `main`, `master`, or `develop`.
+- **Environment**: Ubuntu runner with Python 3.11.
+- **Automated Steps**:
+  1. Check out repository code (`actions/checkout@v4`).
+  2. Set up Python 3.11 runtime (`actions/setup-python@v5`).
+  3. Install dependencies from `requirements.txt` and `requirements-dev.txt`.
+  4. Run the entire test suite (`python -m pytest tests/ -v`).
+  5. Build fails automatically if any test fails, blocking unverified code from merging.
+
+---
+
+### 5. Basic Development Workflow
+```text
+Create Feature Branch ──► Develop Code & Write Tests ──► Run Local Pytest ──► Push & Open PR ──► GitHub Actions CI Pass ──► Merge to Develop/Main
+```
+
+---
+
+## 🛠️ Commands Reference
+
+### Installation & Local Setup
+```bash
+# Install core dependencies
+pip install -r requirements.txt
+
+# Install testing and development dependencies
+pip install -r requirements-dev.txt
+```
+
+### Running Tests Locally
+```bash
+# Run complete test suite (Transformations + Mocked Pipeline + API)
+python -m pytest tests/ -v
+
+# Run transformation unit tests specifically
+python -m pytest tests/tests_tranformations.py -v
+```
+
+### Running the Pipelines
+```bash
+# Run local batch ETL pipeline
+python local_pipeline.py
+
+# Launch Streamlit Analytics Dashboard
+streamlit run dashboard.py
+```
+
+### Git Development Workflow Commands
+```bash
+# 1. Switch to develop and create a new feature branch
+git checkout develop
+git checkout -b feature/cicd-testing
+
+# 2. Stage and commit changes
+git add .
+git commit -m "Add unit tests and CI workflow for transformation pipeline"
+
+# 3. Push feature branch to GitHub
+git push -u origin feature/cicd-testing
+```
 
 ---
 
@@ -76,6 +161,7 @@ flowchart TD
 │   ├── app.py
 │   └── hotel_bookings.csv
 ├── config/                  # Global pipeline configurations & schema rules
+│   └── config.py
 ├── kafka_pipeline/          # Apache Kafka streaming Producer and Consumer
 │   ├── producer.py
 │   └── consumer.py
@@ -83,8 +169,10 @@ flowchart TD
 ├── replay/                  # Historical event streaming & replay utility
 │   └── replay.py
 ├── staging/                 # Data staging layer
-├── tests/                   # Pytest unit tests for transformation & validation
-│   └── tests_tranformations.py
+├── tests/                   # Test suite directory
+│   ├── __init__.py
+│   ├── tests_tranformations.py  # Data transformation unit tests
+│   └── test_pipeline.py         # Mocked pipeline & API unit tests
 ├── validation/              # Data quality & schema validation modules
 │   └── validation.py
 ├── warehouse/               # Atomic & Idempotent data warehouse loaders
@@ -92,99 +180,10 @@ flowchart TD
 │   └── idempotent_load.py
 ├── dashboard.py             # Streamlit Interactive Analytics Dashboard
 ├── docker-compose.yml       # Docker Compose setup for infrastructure services
-├── requirements.txt         # Python package dependencies
+├── requirements.txt         # Production Python package dependencies
+├── requirements-dev.txt     # Testing & development dependencies
 └── .gitignore               # Environment & build artifact exclusion rules
 ```
-
----
-
-## 🚀 Quick Start Guide
-
-### 1. Prerequisites
-- Python 3.11+
-- Docker & Docker Compose (for Airflow / Kafka infrastructure)
-
-### 2. Environment Setup
-Clone the repository and install required Python dependencies:
-
-```bash
-# Clone the repository
-git clone https://github.com/Yazeen-Rizwan/hotel-booking-data-pipeline.git
-cd hotel-booking-data-pipeline
-
-# Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
----
-
-## 🧪 Running Unit Tests
-
-To verify transformation logic and schema validation locally:
-
-```bash
-python -m pytest tests/tests_tranformations.py -v
-```
-
-Expected Output:
-```text
-tests/tests_tranformations.py::test_missing_values_are_filled PASSED     [ 25%]
-tests/tests_tranformations.py::test_duplicate_records_are_removed PASSED [ 50%]
-tests/tests_tranformations.py::test_valid_booking_schema PASSED          [ 75%]
-tests/tests_tranformations.py::test_invalid_booking_schema PASSED        [100%]
-======================== 4 passed in 0.80s ========================
-```
-
----
-
-## 📊 Running the Interactive Dashboard
-
-Launch the Streamlit visualization interface:
-
-```bash
-streamlit run dashboard.py
-```
-
-Access the dashboard in your web browser at `http://localhost:8501`.
-
----
-
-## ⚡ Running the Pipelines
-
-### 1. Local Batch Pipeline
-```bash
-python local_pipeline.py
-```
-
-### 2. Kafka Event Streaming Pipeline
-Start infrastructure services via Docker Compose:
-```bash
-docker-compose up -d
-```
-
-Run Kafka Producer and Consumer:
-```bash
-# Terminal 1: Start Consumer
-python -m kafka_pipeline.consumer
-
-# Terminal 2: Start Producer
-python -m kafka_pipeline.producer
-```
-
----
-
-## 🔄 Continuous Integration (CI/CD)
-
-This project uses **GitHub Actions** (`.github/workflows/ci.yml`) for automated continuous integration. On every `push` or `pull_request` to the `main` branch:
-
-1. Code is checked out.
-2. Python 3.11 environment is initialized.
-3. Pipeline dependencies (`pandas`, `pytest`) are installed.
-4. Transformation unit tests are executed automatically.
 
 ---
 
