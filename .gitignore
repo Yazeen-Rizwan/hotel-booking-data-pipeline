@@ -1,0 +1,30 @@
+# Virtual environments
+airflow_env/
+venv/
+.venv/
+env/
+
+# Python cache & build
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Logs
+airflow_docker/logs/
+logs/
+*.log
+
+# Environment variables
+.env
+.env.*
+
+# Kafka binary release directory (local binaries)
+kafka_2.12-*/
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

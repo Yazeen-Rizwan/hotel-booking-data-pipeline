@@ -1,0 +1,2 @@
+hotel,lead_time,arrival_date_year,arrival_date_month,arrival_date_day_of_month,adults,children,babies,adr,is_canceled,market_segment
+City Hotel,19,2026,January,15,2,0,0,100.0,0,Direct

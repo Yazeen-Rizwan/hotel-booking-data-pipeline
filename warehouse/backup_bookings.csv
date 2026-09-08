@@ -1,0 +1,98 @@
+adr,adults,agent,arrival_date_day_of_month,arrival_date_month,arrival_date_week_number,arrival_date_year,assigned_room_type,babies,booking_changes,children,company,country,customer_type,days_in_waiting_list,deposit_type,distribution_channel,hotel,is_canceled,is_repeated_guest,lead_time,market_segment,meal,previous_bookings_not_canceled,previous_cancellations,required_car_parking_spaces,reservation_status,reservation_status_date,reserved_room_type,stays_in_week_nights,stays_in_weekend_nights,total_of_special_requests
+0.0,2,,1,July,27,2015,C,0,3,0.0,,PRT,Transient,0,No Deposit,Direct,Resort Hotel,0,0,342,Direct,BB,0,0,0,Check-Out,2015-07-01,C,0,0,0
+0.0,2,,1,July,27,2015,C,0,4,0.0,,PRT,Transient,0,No Deposit,Direct,Resort Hotel,0,0,737,Direct,BB,0,0,0,Check-Out,2015-07-01,C,0,0,0
+75.0,1,,1,July,27,2015,C,0,0,0.0,,GBR,Transient,0,No Deposit,Direct,Resort Hotel,0,0,7,Direct,BB,0,0,0,Check-Out,2015-07-02,A,1,0,0
+75.0,1,304.0,1,July,27,2015,A,0,0,0.0,,GBR,Transient,0,No Deposit,Corporate,Resort Hotel,0,0,13,Corporate,BB,0,0,0,Check-Out,2015-07-02,A,1,0,0
+98.0,2,240.0,1,July,27,2015,A,0,0,0.0,,GBR,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,14,Online TA,BB,0,0,0,Check-Out,2015-07-03,A,2,0,1
+107.0,2,,1,July,27,2015,C,0,0,0.0,,PRT,Transient,0,No Deposit,Direct,Resort Hotel,0,0,0,Direct,BB,0,0,0,Check-Out,2015-07-03,C,2,0,0
+103.0,2,303.0,1,July,27,2015,C,0,0,0.0,,PRT,Transient,0,No Deposit,Direct,Resort Hotel,0,0,9,Direct,FB,0,0,0,Check-Out,2015-07-03,C,2,0,1
+82.0,2,240.0,1,July,27,2015,A,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,1,0,85,Online TA,BB,0,0,0,Canceled,2015-05-06,A,3,0,1
+105.5,2,15.0,1,July,27,2015,D,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,1,0,75,Offline TA/TO,HB,0,0,0,Canceled,2015-04-22,D,3,0,0
+123.0,2,240.0,1,July,27,2015,E,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,1,0,23,Online TA,BB,0,0,0,Canceled,2015-06-23,E,4,0,0
+145.0,2,240.0,1,July,27,2015,D,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,35,Online TA,HB,0,0,0,Check-Out,2015-07-05,D,4,0,0
+97.0,2,240.0,1,July,27,2015,E,0,0,0.0,,USA,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,68,Online TA,BB,0,0,0,Check-Out,2015-07-05,D,4,0,3
+154.77,2,241.0,1,July,27,2015,G,0,1,1.0,,ESP,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,18,Online TA,HB,0,0,0,Check-Out,2015-07-05,G,4,0,1
+94.71,2,241.0,1,July,27,2015,E,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,37,Online TA,BB,0,0,0,Check-Out,2015-07-05,E,4,0,0
+97.0,2,240.0,1,July,27,2015,E,0,0,0.0,,IRL,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,68,Online TA,BB,0,0,0,Check-Out,2015-07-05,D,4,0,3
+97.5,2,8.0,1,July,27,2015,E,0,0,0.0,,PRT,Contract,0,No Deposit,TA/TO,Resort Hotel,0,0,37,Offline TA/TO,BB,0,0,0,Check-Out,2015-07-05,E,4,0,0
+88.2,2,240.0,1,July,27,2015,E,0,0,0.0,,IRL,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,12,Online TA,BB,0,0,0,Check-Out,2015-07-02,A,1,0,0
+107.42,2,,1,July,27,2015,G,0,0,0.0,110.0,FRA,Transient,0,No Deposit,Corporate,Resort Hotel,0,0,0,Corporate,BB,0,0,0,Check-Out,2015-07-02,A,1,0,0
+153.0,2,250.0,1,July,27,2015,G,0,0,0.0,,GBR,Transient,0,No Deposit,Direct,Resort Hotel,0,0,7,Direct,BB,0,0,0,Check-Out,2015-07-05,G,4,0,1
+97.29,1,241.0,1,July,27,2015,F,0,0,0.0,,GBR,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,37,Online TA,BB,0,0,0,Check-Out,2015-07-06,F,4,1,1
+84.67,2,250.0,1,July,27,2015,A,0,1,0.0,,PRT,Transient,0,No Deposit,Direct,Resort Hotel,0,0,72,Direct,BB,0,0,0,Check-Out,2015-07-07,A,4,2,1
+99.67,2,250.0,1,July,27,2015,D,0,1,0.0,,PRT,Transient,0,No Deposit,Direct,Resort Hotel,0,0,72,Direct,BB,0,0,0,Check-Out,2015-07-07,D,4,2,1
+94.95,2,115.0,1,July,27,2015,I,0,0,0.0,,GBR,Contract,0,No Deposit,TA/TO,Resort Hotel,0,0,127,Offline TA/TO,HB,0,0,0,Check-Out,2015-07-01,D,5,2,1
+63.6,2,5.0,1,July,27,2015,D,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,78,Offline TA/TO,BB,0,0,1,Check-Out,2015-07-08,D,5,2,0
+79.5,2,8.0,1,July,27,2015,D,0,0,0.0,,IRL,Contract,0,No Deposit,TA/TO,Resort Hotel,0,0,48,Offline TA/TO,BB,0,0,0,Check-Out,2015-07-08,D,5,2,0
+107.0,2,240.0,1,July,27,2015,E,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,1,0,60,Online TA,BB,0,0,0,Canceled,2015-05-11,E,5,2,2
+94.0,2,240.0,1,July,27,2015,A,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,77,Online TA,BB,0,0,0,Check-Out,2015-07-08,A,5,2,0
+87.3,2,240.0,1,July,27,2015,D,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,99,Online TA,BB,0,0,1,Check-Out,2015-07-08,D,5,2,1
+62.0,1,,1,July,27,2015,A,0,2,0.0,,,Transient,0,No Deposit,Direct,Resort Hotel,0,0,118,Direct,BB,0,0,0,Check-Out,2015-07-15,A,10,4,2
+63.86,2,241.0,1,July,27,2015,D,0,0,0.0,,GBR,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,95,Offline TA/TO,BB,0,0,0,Check-Out,2015-07-16,D,11,4,0
+108.3,2,,1,July,27,2015,E,0,0,0.0,,PRT,Transient,0,No Deposit,Direct,Resort Hotel,1,0,96,Direct,BB,0,0,0,Canceled,2015-05-29,E,8,2,2
+65.5,2,175.0,2,July,27,2015,C,0,0,0.0,,IRL,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,69,Offline TA/TO,BB,0,0,0,Check-Out,2015-07-08,A,4,2,0
+108.8,3,241.0,2,July,27,2015,D,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,1,0,45,Online TA,BB,0,0,0,Canceled,2015-05-19,D,3,1,1
+108.8,3,241.0,2,July,27,2015,D,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,1,0,40,Online TA,BB,0,0,0,Canceled,2015-06-19,D,3,1,1
+98.0,2,240.0,2,July,27,2015,C,0,0,0.0,,ESP,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,15,Online TA,BB,0,0,0,Check-Out,2015-07-06,A,3,1,0
+108.8,3,241.0,2,July,27,2015,D,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,36,Online TA,BB,0,0,0,Check-Out,2015-07-06,D,3,1,1
+108.8,3,241.0,2,July,27,2015,D,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,1,0,43,Online TA,BB,0,0,0,Canceled,2015-05-23,D,3,1,0
+137.0,2,250.0,2,July,27,2015,E,0,0,0.0,,ROU,Transient,0,No Deposit,Direct,Resort Hotel,0,0,70,Direct,HB,0,0,0,Check-Out,2015-07-07,E,3,2,1
+117.81,2,241.0,2,July,27,2015,G,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,1,0,45,Online TA,BB,0,0,0,Canceled,2015-05-18,G,3,2,0
+79.5,2,8.0,2,July,27,2015,D,0,0,0.0,,IRL,Contract,0,No Deposit,TA/TO,Resort Hotel,0,0,45,Offline TA/TO,BB,0,0,0,Check-Out,2015-07-07,D,3,2,0
+123.0,2,,2,July,27,2015,F,0,0,0.0,,ESP,Transient,0,No Deposit,Direct,Resort Hotel,0,0,16,Direct,BB,0,0,0,Check-Out,2015-07-07,F,3,2,0
+110.7,2,240.0,2,July,27,2015,A,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,107,Online TA,BB,0,0,0,Check-Out,2015-07-09,A,5,2,2
+153.0,2,240.0,2,July,27,2015,G,0,0,2.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,1,0,47,Online TA,BB,0,0,0,Canceled,2015-06-02,G,5,2,0
+58.95,2,134.0,2,July,27,2015,A,0,0,0.0,,ESP,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,96,Offline TA/TO,BB,0,0,0,Check-Out,2015-07-09,A,5,2,1
+82.88,2,156.0,2,July,27,2015,E,0,0,0.0,,NOR,Transient-Party,0,No Deposit,TA/TO,Resort Hotel,0,0,113,Offline TA/TO,BB,0,0,0,Check-Out,2015-07-09,E,5,2,2
+82.35,2,243.0,2,July,27,2015,B,0,1,0.0,,GBR,Contract,0,No Deposit,TA/TO,Resort Hotel,0,0,90,Offline TA/TO,HB,0,0,0,Check-Out,2015-07-09,A,5,2,0
+119.35,2,241.0,2,July,27,2015,F,0,1,0.0,,IRL,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,50,Online TA,HB,0,0,0,Check-Out,2015-07-09,E,5,2,1
+67.58,2,156.0,2,July,27,2015,D,0,0,0.0,,NOR,Transient-Party,0,No Deposit,TA/TO,Resort Hotel,0,0,113,Offline TA/TO,BB,0,0,0,Check-Out,2015-07-09,D,5,2,2
+56.01,2,156.0,2,July,27,2015,A,0,0,0.0,,IRL,Contract,0,No Deposit,TA/TO,Resort Hotel,0,0,93,Offline TA/TO,BB,0,0,0,Check-Out,2015-07-13,A,8,3,0
+110.7,2,243.0,2,July,27,2015,D,0,0,0.0,,OMN,Contract,0,No Deposit,TA/TO,Resort Hotel,0,0,76,Offline TA/TO,BB,0,0,0,Check-Out,2015-07-16,D,10,4,0
+88.2,2,240.0,2,July,27,2015,C,0,0,0.0,,ESP,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,3,Online TA,BB,0,0,1,Check-Out,2015-07-03,A,1,0,0
+147.0,2,240.0,2,July,27,2015,H,0,0,0.0,,ARG,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,1,Online TA,BB,0,0,1,Check-Out,2015-07-03,H,1,0,0
+107.0,2,,2,July,27,2015,C,0,0,2.0,,ESP,Transient,0,No Deposit,Direct,Resort Hotel,0,0,1,Direct,BB,0,0,1,Check-Out,2015-07-03,C,1,0,2
+147.0,2,,2,July,27,2015,H,0,0,0.0,,PRT,Transient,0,No Deposit,Direct,Resort Hotel,0,0,0,Direct,BB,0,0,0,Check-Out,2015-07-03,H,1,0,0
+117.9,2,240.0,2,July,27,2015,D,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,0,Online TA,BB,0,0,0,Check-Out,2015-07-03,A,1,0,2
+123.0,2,,2,July,27,2015,G,0,0,0.0,,PRT,Transient,0,No Deposit,Direct,Resort Hotel,0,0,0,Direct,BB,0,0,0,Check-Out,2015-07-03,G,1,0,0
+98.0,2,242.0,2,July,27,2015,C,0,0,0.0,,USA,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,14,Online TA,BB,0,0,0,Check-Out,2015-07-04,A,2,0,1
+117.81,2,241.0,2,July,27,2015,G,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,10,Online TA,BB,0,0,0,Check-Out,2015-07-04,G,2,0,0
+135.0,2,240.0,2,July,27,2015,E,0,0,0.0,,IRL,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,5,Online TA,BB,0,0,1,Check-Out,2015-07-04,E,2,0,2
+133.0,2,250.0,2,July,27,2015,F,0,0,0.0,,ESP,Transient,0,No Deposit,Direct,Resort Hotel,0,0,17,Direct,BB,0,0,0,Check-Out,2015-07-05,F,3,0,1
+58.95,2,115.0,2,July,27,2015,C,0,0,0.0,,IRL,Contract,0,No Deposit,TA/TO,Resort Hotel,0,0,93,Offline TA/TO,BB,0,0,0,Check-Out,2015-07-05,A,3,0,0
+136.33,2,240.0,2,July,27,2015,A,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,1,0,3,Online TA,HB,0,0,0,Canceled,2015-06-29,A,3,0,2
+153.0,2,240.0,3,July,27,2015,H,0,0,2.0,,USA,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,10,Online TA,BB,0,0,1,Check-Out,2015-07-05,G,2,0,0
+110.5,2,240.0,3,July,27,2015,C,0,0,0.0,,ESP,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,3,Online TA,BB,0,0,0,Check-Out,2015-07-05,A,2,0,0
+97.0,2,242.0,3,July,27,2015,D,0,0,0.0,,POL,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,51,Online TA,BB,0,0,0,Check-Out,2015-07-05,D,2,0,0
+110.3,3,242.0,3,July,27,2015,A,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,1,0,71,Offline TA/TO,BB,0,0,0,Canceled,2015-06-16,A,2,0,2
+82.0,2,240.0,3,July,27,2015,A,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,1,0,63,Online TA,BB,0,0,0,Canceled,2015-06-18,A,2,0,2
+97.0,2,240.0,3,July,27,2015,D,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,1,0,62,Online TA,BB,0,0,0,Canceled,2015-07-03,D,2,0,1
+73.8,2,240.0,3,July,27,2015,A,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,1,0,101,Online TA,BB,0,0,0,Canceled,2015-06-12,A,2,0,1
+91.5,2,3.0,3,July,27,2015,A,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,2,Offline TA/TO,HB,0,0,0,Check-Out,2015-07-05,A,2,0,0
+114.5,2,240.0,3,July,27,2015,A,0,0,0.0,,ESP,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,15,Online TA,BB,0,0,0,Check-Out,2015-07-05,A,2,0,0
+110.3,3,242.0,3,July,27,2015,A,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,1,0,51,Online TA,BB,0,0,0,Canceled,2015-06-09,A,2,0,0
+90.9,2,240.0,3,July,27,2015,A,0,0,0.0,,ESP,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,3,Online TA,BB,0,0,1,Check-Out,2015-07-06,A,2,1,0
+123.0,2,240.0,3,July,27,2015,E,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,1,0,48,Online TA,BB,0,0,0,Canceled,2015-05-26,E,2,1,0
+122.0,1,240.0,3,July,27,2015,A,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,2,Online TA,BB,0,0,0,Check-Out,2015-07-07,A,2,2,0
+110.7,2,105.0,3,July,27,2015,A,0,0,0.0,,DEU,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,72,Offline TA/TO,BB,0,0,1,Check-Out,2015-07-07,A,2,2,0
+85.86,3,5.0,3,July,27,2015,D,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,81,Offline TA/TO,BB,0,0,0,Check-Out,2015-07-11,D,6,2,0
+58.95,2,40.0,3,July,27,2015,A,0,0,0.0,,FRA,Contract,0,No Deposit,TA/TO,Resort Hotel,0,0,99,Offline TA/TO,BB,0,0,0,Check-Out,2015-07-12,A,7,2,0
+55.68,2,40.0,3,July,27,2015,A,0,0,0.0,,PRT,Contract,0,No Deposit,TA/TO,Resort Hotel,1,0,368,Offline TA/TO,BB,0,0,0,Canceled,2015-05-19,A,7,3,0
+55.68,2,40.0,3,July,27,2015,A,0,0,0.0,,GBR,Contract,0,No Deposit,TA/TO,Resort Hotel,0,0,364,Offline TA/TO,BB,0,0,0,Check-Out,2015-07-13,A,7,3,0
+124.0,2,250.0,3,July,27,2015,A,0,2,0.0,,PRT,Transient,0,No Deposit,Direct,Resort Hotel,1,0,81,Direct,HB,0,0,0,Canceled,2015-06-09,A,7,3,1
+111.15,2,115.0,3,July,27,2015,E,0,0,0.0,,GBR,Contract,0,No Deposit,TA/TO,Resort Hotel,0,0,99,Offline TA/TO,HB,0,0,0,Check-Out,2015-07-13,E,7,3,0
+134.73,2,40.0,3,July,27,2015,E,0,0,0.0,,GBR,Contract,0,No Deposit,TA/TO,Resort Hotel,0,0,324,Offline TA/TO,HB,0,0,0,Check-Out,2015-07-17,E,10,4,0
+92.45,2,241.0,3,July,27,2015,F,0,1,0.0,,GBR,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,69,Online TA,BB,0,0,0,Check-Out,2015-07-17,F,10,4,1
+108.73,2,242.0,3,July,27,2015,A,0,0,1.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,1,0,79,Offline TA/TO,BB,0,0,0,Canceled,2015-04-15,A,15,6,2
+73.8,2,240.0,3,July,27,2015,C,0,0,0.0,,GBR,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,12,Online TA,BB,0,0,0,Check-Out,2015-07-04,A,1,0,0
+98.0,2,240.0,3,July,27,2015,C,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,9,Online TA,BB,0,0,1,Check-Out,2015-07-04,A,1,0,2
+131.0,2,240.0,3,July,27,2015,C,0,0,0.0,,ESP,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,1,Online TA,BB,0,0,0,Check-Out,2015-07-04,A,1,0,1
+123.0,2,240.0,3,July,27,2015,E,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,21,Online TA,BB,0,0,0,Check-Out,2015-07-04,E,1,0,0
+94.71,2,241.0,3,July,27,2015,C,0,0,0.0,,USA,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,9,Online TA,BB,0,0,0,Check-Out,2015-07-04,C,1,0,0
+123.0,2,240.0,3,July,27,2015,A,0,0,0.0,,BEL,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,109,Online TA,BB,0,0,0,Check-Out,2015-07-04,A,1,0,2
+123.0,2,240.0,3,July,27,2015,A,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,1,0,109,Online TA,BB,0,0,0,Canceled,2015-05-26,A,2,0,1
+73.8,2,240.0,3,July,27,2015,A,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,1,0,72,Online TA,BB,0,0,0,Canceled,2015-06-29,A,2,0,1
+117.0,2,242.0,3,July,27,2015,F,0,0,0.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,1,0,63,Online TA,BB,0,0,0,Canceled,2015-05-13,F,5,2,1
+196.54,3,105.0,3,July,27,2015,E,0,0,0.0,,ESP,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,63,Offline TA/TO,HB,0,0,0,Check-Out,2015-07-10,E,5,2,1
+99.3,2,240.0,3,July,27,2015,D,0,0,1.0,,PRT,Transient,0,No Deposit,TA/TO,Resort Hotel,0,0,101,Online TA,BB,0,0,1,Check-Out,2015-07-10,D,5,2,2
+90.95,2,250.0,3,July,27,2015,E,0,0,0.0,,DEU,Transient,0,No Deposit,Direct,Resort Hotel,0,0,102,Direct,BB,0,0,0,Check-Out,2015-07-10,E,5,2,0
